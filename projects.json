@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "portafolio",
+      "path": "/home/brayanroa/Documentos/PROYECTOS/portafolio",
+      "runCommand": "ng s --o"
+    },
+    {
+      "name": "artistica",
+      "path": "/home/brayanroa/Documentos/BROERS/PROYECTOS/ARTISTICA/encuestaartisticapowerapps",
+      "runCommand": "make run"
+    },
+    {
+      "name": "primera infancia",
+      "path": "/home/brayanroa/Documentos/BROERS/PROYECTOS/ENCUESTAS MEN/backend",
+      "runCommand": "npm run start:dev"
+    }
+  ]
+}
