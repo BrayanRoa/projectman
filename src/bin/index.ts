@@ -8,6 +8,7 @@ import { removeProject } from '../commands/remove.js';
 import { launchProject } from '../commands/launch.js';
 import { renameProject } from '../commands/rename.js';
 import { editProject } from '../commands/edit.js';
+import { openShellInProject } from '../commands/shell.js';
 
 
 const program = new Command();
@@ -35,6 +36,7 @@ program
 program
     .command('open')
     .alias('o')
+    .argument("<name>", "Nombre del proyecto")
     .description('Abrir un proyecto en VSCode')
     .action(openProject);
 
@@ -56,5 +58,12 @@ program
     .argument("<name>", 'Nombre del proyecto')
     .description('editar los datos de un proyecto')
     .action(editProject)
+
+program
+    .command('shell')
+    .alias("s")
+    .argument('<name>', 'Nombre del proyecto')
+    .description('Abrir una shell en la carpeta del proyecto')
+    .action(openShellInProject);
 
 program.parse();
